@@ -12,6 +12,22 @@ Rotación de objetos mediante interacción táctil
 Panel informativo UI independiente del objeto AR
 Gestión del estado de tracking de los objetos
 
+## Sistema de tracking implementado
+
+El sistema utiliza ARTrackedImageManager para detectar imágenes físicas
+y asociarlas dinámicamente con prefabs mediante un diccionario
+imagen → objeto 3D.
+
+Los objetos se instancian frente a la cámara del usuario para mejorar
+la visibilidad y se orientan automáticamente hacia el observador.
+
+Además se implementó:
+
+- gestión del estado TrackingState
+- destrucción automática de objetos al perder tracking
+- panel informativo UI independiente del objeto AR
+- botón de limpieza manual de objetos activos
+
 ## Tecnologías utilizadas
 
 Unity
